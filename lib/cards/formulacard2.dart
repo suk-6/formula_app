@@ -18,7 +18,13 @@ class _FormulaCard2State extends State<FormulaCard2> {
         decoration: BoxDecoration(border: Border.all()),
         child: Image.asset(widget.src),
       ),
-      Text(widget.name),
+      Container(
+        height: 3,
+      ),
+      Text(
+        widget.name,
+        style: const TextStyle(fontSize: 15),
+      ),
       Container(
         height: 20,
       ),
