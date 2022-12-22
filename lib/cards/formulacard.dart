@@ -5,6 +5,7 @@ import 'package:formula_app/formulapages/formula0.dart';
 import 'package:formula_app/formulapages/formula1.dart';
 import 'package:formula_app/formulapages/formula2.dart';
 import 'package:formula_app/formulapages/formula3.dart';
+import 'package:formula_app/formulapages/formula4.dart';
 import 'package:get/get.dart';
 
 class FormulaCard extends StatefulWidget {
@@ -23,11 +24,9 @@ class _FormulaCardState extends State<FormulaCard> {
       const Formula1(),
       const Formula2(),
       const Formula3(),
+      const Formula4(),
     ];
-    List FormulaNames = [
-      "이차방정식",
-      "집합",
-    ];
+    List FormulaNames = ["이차방정식", "집합", "직선의 방정식", "원의 방정식", "평행이동 & 대칭이동"];
     return InkWell(
         onTap: () {
           Get.to(FormulaPages[widget.number]);

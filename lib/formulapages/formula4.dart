@@ -3,20 +3,20 @@ import 'package:formula_app/cards/formulacard2.dart';
 import 'package:formula_app/mainpage.dart';
 import 'package:get/get.dart';
 
-class Formula3 extends StatefulWidget {
-  const Formula3({super.key});
+class Formula4 extends StatefulWidget {
+  const Formula4({super.key});
 
   @override
-  _Formula3State createState() => _Formula3State();
+  _Formula4State createState() => _Formula4State();
 }
 
-class _Formula3State extends State<Formula3> {
+class _Formula4State extends State<Formula4> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
           title: const Text(
-            '원의 방정식',
+            '평행이동 & 대칭이동',
             style: TextStyle(
                 fontFamily: "NotoSansKR", fontSize: 23, color: Colors.black),
           ),
@@ -37,35 +37,15 @@ class _Formula3State extends State<Formula3> {
           ),
           FormulaCard2(
             name: "",
-            src: 'assets/image/10.png',
+            src: 'assets/image/18.png',
           ),
           FormulaCard2(
-            name: "원의 방정식",
-            src: 'assets/image/11.png',
+            name: "평행이동",
+            src: 'assets/image/19.png',
           ),
           FormulaCard2(
-            name: "",
-            src: 'assets/image/12.png',
-          ),
-          FormulaCard2(
-            name: "원과 직선의 위치 관계",
-            src: 'assets/image/13.png',
-          ),
-          FormulaCard2(
-            name: "접선의 방정식",
-            src: 'assets/image/14.png',
-          ),
-          FormulaCard2(
-            name: "",
-            src: 'assets/image/15.png',
-          ),
-          FormulaCard2(
-            name: "축에 접하는 원",
-            src: 'assets/image/16.png',
-          ),
-          FormulaCard2(
-            name: "두 원의 교점을 지나는 원",
-            src: 'assets/image/17.png',
+            name: "대칭이동",
+            src: 'assets/image/20.png',
           ),
         ])));
   }
