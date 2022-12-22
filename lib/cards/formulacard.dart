@@ -26,7 +26,7 @@ class _FormulaCardState extends State<FormulaCard> {
     ];
     List FormulaNames = [
       "이차방정식",
-      "이차함수",
+      "집합",
     ];
     return InkWell(
         onTap: () {

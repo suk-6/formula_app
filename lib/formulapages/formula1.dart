@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:formula_app/cards/formulacard2.dart';
+import 'package:formula_app/mainpage.dart';
+import 'package:get/get.dart';
 
 class Formula1 extends StatefulWidget {
   const Formula1({super.key});
@@ -20,6 +22,13 @@ class _Formula1State extends State<Formula1> {
           ),
           centerTitle: true,
           backgroundColor: Colors.white,
+          leading: IconButton(
+            icon: const Icon(Icons.home),
+            onPressed: () {
+              Get.offAll(const MainPage());
+            },
+            color: Colors.black,
+          ),
         ),
         body: SingleChildScrollView(
             child: Column(children: [

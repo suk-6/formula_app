@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:formula_app/cards/formulacard2.dart';
+import 'package:formula_app/mainpage.dart';
+import 'package:get/instance_manager.dart';
+import 'package:get/get.dart';
 
 class Formula0 extends StatefulWidget {
   const Formula0({super.key});
@@ -20,6 +23,13 @@ class _Formula0State extends State<Formula0> {
           ),
           centerTitle: true,
           backgroundColor: Colors.white,
+          leading: IconButton(
+            icon: const Icon(Icons.home),
+            onPressed: () {
+              Get.offAll(const MainPage());
+            },
+            color: Colors.black,
+          ),
         ),
         body: SingleChildScrollView(
             child: Column(children: [
@@ -33,6 +43,14 @@ class _Formula0State extends State<Formula0> {
           FormulaCard2(
             name: "인수분해 공식",
             src: 'assets/image/1.png',
+          ),
+          FormulaCard2(
+            name: "판별식",
+            src: 'assets/image/3.png',
+          ),
+          FormulaCard2(
+            name: "근과 계수의 관계",
+            src: 'assets/image/4.png',
           ),
         ])));
   }
