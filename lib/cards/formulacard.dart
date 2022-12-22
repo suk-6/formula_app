@@ -43,7 +43,7 @@ class _FormulaCardState extends State<FormulaCard> {
             child: Center(
                 child: Text(
               FormulaNames[widget.number],
-              style: const TextStyle(color: Colors.white),
+              style: const TextStyle(color: Colors.white, fontSize: 30),
             )),
           ),
         ]));

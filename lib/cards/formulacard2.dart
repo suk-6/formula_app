@@ -16,7 +16,9 @@ class _FormulaCard2State extends State<FormulaCard2> {
       Container(
         width: MediaQuery.of(context).size.width,
         decoration: BoxDecoration(border: Border.all()),
-        child: Image.asset(widget.src),
+        child: InteractiveViewer(
+          child: Image.asset(widget.src),
+        ),
       ),
       Container(
         height: 3,
