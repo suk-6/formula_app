@@ -14,7 +14,7 @@ class LandingPage extends StatefulWidget {
 class _LandingPageState extends State<LandingPage> {
   @override
   void initState() {
-    Timer(Duration(seconds: 3), () {
+    Timer(const Duration(seconds: 1), () {
       Get.offAll(() => const MainPage());
     });
     super.initState();
@@ -24,11 +24,12 @@ class _LandingPageState extends State<LandingPage> {
     return Scaffold(
       body: Stack(alignment: Alignment.center, children: [
         Container(
-          color: Color.fromARGB(255, 255, 255, 255),
+          color: Colors.black,
           child: const Center(
               child: Text(
             "Formula",
-            style: TextStyle(fontSize: 25, fontFamily: "NotoSansKR"),
+            style: TextStyle(
+                fontSize: 25, fontFamily: "NotoSansKR", color: Colors.white),
           )),
         ),
         CircularProgressIndicator()
