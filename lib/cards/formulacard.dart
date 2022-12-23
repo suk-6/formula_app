@@ -42,24 +42,22 @@ class _FormulaCardState extends State<FormulaCard> {
       "평행이동 & 대칭이동",
       "함수"
     ];
-    return InkWell(
-        onTap: () {
-          Get.to(FormulaPages[widget.number]);
-        },
-        child: Column(children: [
-          Container(
-            height: 10,
-          ),
-          Container(
-            width: double.infinity,
-            height: 70,
-            color: Colors.primaries[Random().nextInt(Colors.primaries.length)],
-            child: Center(
-                child: Text(
-              FormulaNames[widget.number],
-              style: const TextStyle(color: Colors.white, fontSize: 22),
-            )),
-          ),
-        ]));
+    return Container(
+        width: double.infinity,
+        height: 75,
+        margin: const EdgeInsets.all(30),
+        decoration: BoxDecoration(
+            borderRadius: BorderRadius.circular(50),
+            color: Colors.primaries[Random().nextInt(Colors.primaries.length)]),
+        child: InkWell(
+          onTap: () {
+            Get.to(FormulaPages[widget.number]);
+          },
+          child: Center(
+              child: Text(
+            FormulaNames[widget.number],
+            style: const TextStyle(color: Colors.white, fontSize: 22),
+          )),
+        ));
   }
 }
