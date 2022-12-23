@@ -3,20 +3,20 @@ import 'package:formula_app/cards/formulacard2.dart';
 import 'package:formula_app/mainpage.dart';
 import 'package:get/get.dart';
 
-class Formula1 extends StatefulWidget {
-  const Formula1({super.key});
+class Formula6 extends StatefulWidget {
+  const Formula6({super.key});
 
   @override
-  _Formula1State createState() => _Formula1State();
+  _Formula6State createState() => _Formula6State();
 }
 
-class _Formula1State extends State<Formula1> {
+class _Formula6State extends State<Formula6> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
           title: const Text(
-            '집합',
+            '명제',
             style: TextStyle(
                 fontFamily: "NotoSansKR", fontSize: 23, color: Colors.black),
           ),
@@ -36,24 +36,24 @@ class _Formula1State extends State<Formula1> {
             height: 10,
           ),
           FormulaCard2(
-            name: "집합",
-            src: 'assets/image/2.png',
+            name: "명제와 조건",
+            src: 'assets/image/28.png',
           ),
           FormulaCard2(
-            name: "부분집합",
-            src: 'assets/image/24.png',
+            name: "명제",
+            src: 'assets/image/29.png',
           ),
           FormulaCard2(
-            name: "집합의 연산",
-            src: 'assets/image/25.png',
+            name: "",
+            src: 'assets/image/30.png',
           ),
           FormulaCard2(
-            name: "집합의 연산법칙",
-            src: 'assets/image/26.png',
+            name: "명제의 역, 이, 대우",
+            src: 'assets/image/31.png',
           ),
           FormulaCard2(
-            name: "유한 집합의 개수",
-            src: 'assets/image/27.png',
+            name: "필요조건, 충분조건",
+            src: 'assets/image/32.png',
           ),
         ])));
   }

@@ -9,6 +9,7 @@ import 'package:formula_app/formulapages/formula2.dart';
 import 'package:formula_app/formulapages/formula3.dart';
 import 'package:formula_app/formulapages/formula4.dart';
 import 'package:formula_app/formulapages/formula5.dart';
+import 'package:formula_app/formulapages/formula6.dart';
 import 'package:get/get.dart';
 
 class FormulaCard extends StatefulWidget {
@@ -26,6 +27,7 @@ class _FormulaCardState extends State<FormulaCard> {
     const FormulaPages = [
       Formula0(),
       Formula1(),
+      Formula6(),
       Formula2(),
       Formula3(),
       Formula4(),
@@ -34,6 +36,7 @@ class _FormulaCardState extends State<FormulaCard> {
     const FormulaNames = [
       "이차방정식",
       "집합",
+      "명제",
       "직선의 방정식",
       "원의 방정식",
       "평행이동 & 대칭이동",

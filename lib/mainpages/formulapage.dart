@@ -12,7 +12,7 @@ class _FormulaPageState extends State<FormulaPage> {
   Widget build(BuildContext context) {
     return Container(
       child: ListView.builder(
-          itemCount: 6,
+          itemCount: 7,
           itemBuilder: (BuildContext context, int index) {
             return FormulaCard(number: index);
           }),
