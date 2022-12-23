@@ -45,10 +45,12 @@ class _FormulaCardState extends State<FormulaCard> {
     return Container(
         width: double.infinity,
         height: 75,
-        margin: const EdgeInsets.all(30),
+        margin: const EdgeInsets.all(25),
         decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(50),
-            color: Colors.primaries[Random().nextInt(Colors.primaries.length)]),
+            border: Border.all(color: Colors.black, width: 2),
+            color: Color((Random().nextDouble() * 0x00A00A).toInt())
+                .withOpacity(0.8)),
         child: InkWell(
           onTap: () {
             Get.to(FormulaPages[widget.number]);
