@@ -9,13 +9,13 @@ class FormulaPage extends StatefulWidget {
 }
 
 class _FormulaPageState extends State<FormulaPage> {
+  @override
   Widget build(BuildContext context) {
-    return Container(
-      child: ListView.builder(
-          itemCount: 7,
-          itemBuilder: (BuildContext context, int index) {
-            return FormulaCard(number: index);
-          }),
-    );
+    return ListView.builder(
+        itemCount: FormulaCard.FormulaPages.length,
+        padding: const EdgeInsets.all(2),
+        itemBuilder: (BuildContext context, int index) {
+          return FormulaCard(number: index);
+        });
   }
 }

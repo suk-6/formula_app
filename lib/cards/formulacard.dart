@@ -17,6 +17,25 @@ class FormulaCard extends StatefulWidget {
 
   FormulaCard({super.key, required this.number});
 
+  static const FormulaPages = [
+    Formula0(),
+    Formula1(),
+    Formula6(),
+    Formula2(),
+    Formula3(),
+    Formula4(),
+    Formula5(),
+  ];
+  static const FormulaNames = [
+    "이차방정식",
+    "집합",
+    "명제",
+    "직선의 방정식",
+    "원의 방정식",
+    "평행이동 & 대칭이동",
+    "함수"
+  ];
+
   @override
   _FormulaCardState createState() => _FormulaCardState();
 }
@@ -24,42 +43,26 @@ class FormulaCard extends StatefulWidget {
 class _FormulaCardState extends State<FormulaCard> {
   @override
   Widget build(BuildContext context) {
-    const FormulaPages = [
-      Formula0(),
-      Formula1(),
-      Formula6(),
-      Formula2(),
-      Formula3(),
-      Formula4(),
-      Formula5(),
-    ];
-    const FormulaNames = [
-      "이차방정식",
-      "집합",
-      "명제",
-      "직선의 방정식",
-      "원의 방정식",
-      "평행이동 & 대칭이동",
-      "함수"
-    ];
-    return Container(
-        width: double.infinity,
-        height: 75,
-        margin: const EdgeInsets.all(25),
-        decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(50),
-            border: Border.all(color: Colors.black, width: 2),
-            color: Color((Random().nextDouble() * 0x00A00A).toInt())
-                .withOpacity(0.8)),
+    return Card(
+        elevation: 4.0,
+        margin: const EdgeInsets.all(10),
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8.0)),
         child: InkWell(
-          onTap: () {
-            Get.to(FormulaPages[widget.number]);
-          },
-          child: Center(
-              child: Text(
-            FormulaNames[widget.number],
-            style: const TextStyle(color: Colors.white, fontSize: 22),
-          )),
-        ));
+            onTap: () {
+              Get.to(FormulaCard.FormulaPages[widget.number]);
+            },
+            child: SizedBox(
+              height: 60,
+              child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Center(
+                        child: Text(
+                      FormulaCard.FormulaNames[widget.number],
+                      style: const TextStyle(
+                          height: 1, color: Colors.black, fontSize: 16),
+                    ))
+                  ]),
+            )));
   }
 }
