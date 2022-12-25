@@ -13,14 +13,14 @@ class _MainPageState extends State<MainPage> {
     return Scaffold(
       appBar: AppBar(
         title: const Text(
-          '고1 수학',
+          '고1식',
           style: TextStyle(
               fontFamily: "NotoSansKR", fontSize: 23, color: Colors.black),
         ),
         centerTitle: true,
         backgroundColor: Colors.white,
       ),
-      body: FormulaPage(),
+      body: const FormulaPage(),
     );
   }
 }

@@ -1,7 +1,5 @@
 // ignore_for_file: library_private_types_in_public_api, must_be_immutable, constant_identifier_names
 
-import 'dart:math';
-
 import 'package:flutter/material.dart';
 import 'package:formula_app/formulapages/formula0.dart';
 import 'package:formula_app/formulapages/formula1.dart';
