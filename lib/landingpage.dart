@@ -27,7 +27,7 @@ class _LandingPageState extends State<LandingPage> {
           color: Colors.black,
           child: const Center(
               child: Text(
-            "Formula",
+            "고1식",
             style: TextStyle(
                 fontSize: 25, fontFamily: "NotoSansKR", color: Colors.white),
           )),
