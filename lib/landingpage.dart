@@ -32,7 +32,7 @@ class _LandingPageState extends State<LandingPage> {
                 fontSize: 25, fontFamily: "NotoSansKR", color: Colors.white),
           )),
         ),
-        CircularProgressIndicator()
+        const CircularProgressIndicator()
       ]),
     );
   }
