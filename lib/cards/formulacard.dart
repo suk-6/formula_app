@@ -36,6 +36,8 @@ class FormulaCard extends StatefulWidget {
     "함수"
   ];
 
+  static final BorderRadius _baseBorderRadius = BorderRadius.circular(8);
+
   @override
   _FormulaCardState createState() => _FormulaCardState();
 }
@@ -46,8 +48,10 @@ class _FormulaCardState extends State<FormulaCard> {
     return Card(
         elevation: 4.0,
         margin: const EdgeInsets.all(10),
-        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8.0)),
+        shape:
+            RoundedRectangleBorder(borderRadius: FormulaCard._baseBorderRadius),
         child: InkWell(
+            borderRadius: FormulaCard._baseBorderRadius,
             onTap: () {
               Get.to(FormulaCard.FormulaPages[widget.number]);
             },
