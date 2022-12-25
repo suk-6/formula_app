@@ -62,7 +62,7 @@ class _FormulaCardState extends State<FormulaCard> {
                         child: Text(
                       FormulaCard.FormulaNames[widget.number],
                       style: const TextStyle(
-                          height: 1, color: Colors.black, fontSize: 16),
+                          height: 1, color: Colors.black, fontSize: 18),
                     ))
                   ]),
             )));
