@@ -1,16 +1,7 @@
-# formula_app
+# 고1식
+"고등학교 1학년 수학 공식"의 줄임말로 수학 공식을 모아서 보여준다.
 
-A new Flutter project.
+현재는 프로토타입으로 이미지를 불러와서 띄워주는 방식을 사용 중이다.
 
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## stack
+:star: Flutter :star:
